@@ -2,7 +2,10 @@ import React from 'react'
 
 const Home = () => {
   return (
-    <div>Welcom to BlueHub Where Knowledge is Shared</div>
+    <>
+      <h1>Welcome to BlueHub Where Knowledge is Shared</h1>
+      <h1 className='font-space-grotesk'>Connect, Learn, and Grow Together!</h1>
+    </>
   )
 }
 
