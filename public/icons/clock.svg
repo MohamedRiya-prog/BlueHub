@@ -1,0 +1,14 @@
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="12" cy="12" r="11.25" stroke="url(#paint0_linear_284_119)" stroke-width="1.5"/>
+<path d="M12 4V13L18 17.5" stroke="url(#paint1_linear_284_119)" stroke-width="1.5"/>
+<defs>
+<linearGradient id="paint0_linear_284_119" x1="0" y1="12" x2="24" y2="12" gradientUnits="userSpaceOnUse">
+<stop stop-color="#808284"/>
+<stop offset="1" stop-color="#0069A7"/>
+</linearGradient>
+<linearGradient id="paint1_linear_284_119" x1="15" y1="4" x2="15" y2="17.5" gradientUnits="userSpaceOnUse">
+<stop stop-color="#808284"/>
+<stop offset="1" stop-color="#0069A7"/>
+</linearGradient>
+</defs>
+</svg>
