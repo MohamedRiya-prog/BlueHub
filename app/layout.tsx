@@ -3,6 +3,9 @@ import localFont from "next/font/local";
 import "./globals.css";
 import { ThemeProvider } from "next-themes";
 import Navbar from "@/components/navbar";
+import {SessionProvider, useSession} from "next-auth/react";
+import React, {ReactNode} from "react";
+import {auth} from "@/auth";
 
 const inter = localFont({
   src: "./fonts/InterFont.ttf",
@@ -24,13 +27,13 @@ export const metadata: Metadata = {
   },
 };
 
-export default function RootLayout({
+const RootLayout = async ({
   children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+}: {children: ReactNode}) => {
+    const session = await auth();
   return (
     <html lang="en" suppressHydrationWarning>
+    <SessionProvider session={session}>
       <body
         className={`${inter.className} ${spaceGrotesk.variable} antialiased`}
       >
@@ -38,6 +41,9 @@ export default function RootLayout({
           {children}
         </ThemeProvider>
       </body>
+    </SessionProvider>
     </html>
   );
 }
+
+export default RootLayout;
